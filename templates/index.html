@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Sustainability Assistant - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">🌱</span>
+                <span class="brand-text">AI Sustainability Assistant</span>
+            </div>
+            <div class="nav-links">
+                <a href="/" class="active">Home</a>
+                <a href="/chatbot">Chatbot</a>
+                <a href="/dashboard">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+
+        <section class="prediction-section">
+            <div class="container">
+                <div class="card">
+                    <h2>Get Sustainability Score</h2>
+                    <p class="card-description">Enter an item to get its sustainability score and disposal recommendations</p>
+                    
+                    <form id="predictionForm" class="prediction-form">
+                        <div class="input-group">
+                            <input type="text" id="itemInput" placeholder="e.g., Used Battery, Plastic Bottle, Food Scraps..." 
+                                   required autocomplete="off">
+                            <button type="submit" class="btn btn-primary">Analyze</button>
+                        </div>
+                    </form>
+
+                    <div id="predictionResult" class="prediction-result hidden"></div>
+                </div>
+            </div>
+        </section>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
+

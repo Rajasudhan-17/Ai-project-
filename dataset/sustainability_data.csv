@@ -1,0 +1,21 @@
+item,item_type,waste_category,energy_level,pollution_risk,recyclable,disposal_method,sustainability_score,environmental_impact,recommendation
+Used Battery,Electronics,E-Waste,High,High,Yes,Special Collection,3,High,Take to certified e-waste collection center. Batteries contain toxic metals.
+Plastic Bottle,Plastic,Recyclable,Low,Medium,Yes,Recycling Bin,7,Medium,Wash and place in recycling bin. Reduces landfill waste.
+Food Scraps,Organic,Biodegradable,Low,Low,No,Compost Bin,8,Low,Compost at home or use municipal composting. Creates nutrient-rich soil.
+Glass Jar,Glass,Recyclable,Low,Low,Yes,Recycling Bin,8,Low,Clean and recycle. Glass can be recycled infinitely.
+Paper,Paper,Recyclable,Low,Low,Yes,Recycling Bin,9,Low,Recycle clean paper. Saves trees and reduces energy consumption.
+Old Clothes,Textile,Reusable,Low,Low,Yes,"Donation/Recycling",7,Low,"Donate if wearable, recycle if damaged. Reduces textile waste."
+Cigarette Butt,Other,Hazardous,Low,High,No,Special Waste,2,High,Use designated disposal. Contains toxic chemicals harmful to environment.
+Medicine,Pharmaceutical,Hazardous,Low,High,No,Pharmacy Return,3,High,Return to pharmacy. Prevents water contamination.
+Motor Oil,Chemical,Hazardous,High,Very High,No,Special Collection,1,Very High,"Take to certified collection center. Never pour down drain."
+Electronics,Electronics,E-Waste,High,High,Yes,Special Collection,4,High,Recycle through certified e-waste program. Contains valuable materials.
+Cardboard,Paper,Recyclable,Low,Low,Yes,Recycling Bin,9,Low,Flatten and recycle. Highly recyclable material.
+Aluminum Can,Metal,Recyclable,Low,Low,Yes,Recycling Bin,9,Low,Recycle. Saves 95% energy vs new production.
+Styrofoam,Plastic,Non-Recyclable,Medium,High,No,Landfill,2,High,Avoid if possible. Not recyclable in most areas.
+Coffee Grounds,Organic,Biodegradable,Low,Low,No,Compost Bin,8,Low,Excellent for composting. Adds nitrogen to soil.
+Paint,Chemical,Hazardous,Medium,High,No,Special Collection,2,High,Take to hazardous waste facility. Never pour down drain.
+Light Bulb,Electronics,E-Waste,Low,Medium,Yes,Special Collection,5,Medium,Recycle at hardware store. Contains mercury.
+Tires,Rubber,Non-Recyclable,Medium,High,Yes,Special Collection,3,High,Take to tire recycling center. Takes 50+ years to decompose.
+Yard Waste,Organic,Biodegradable,Low,Low,No,Compost Bin,8,Low,Compost or municipal collection. Natural decomposition.
+Aerosol Can,Metal,Hazardous,Low,Medium,Yes,Special Collection,4,Medium,"Ensure empty, recycle if possible. Contains pressurized chemicals."
+Plastic Bag,Plastic,Non-Recyclable,Low,High,No,"Reuse/Store Drop-off",3,High,"Reuse or take to store drop-off. Avoids single-use waste."

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard - Sustainability Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">🌱</span>
+                <span class="brand-text">AI Sustainability Assistant</span>
+            </div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/chatbot">Chatbot</a>
+                <a href="/dashboard" class="active">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content dashboard-main">
+        <div class="container">
+            <h1 class="dashboard-title">Analytics Dashboard</h1>
+            <p class="dashboard-subtitle">Insights from sustainability data and predictions</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-content">
+                        <h3 id="totalItems">-</h3>
+                        <p>Total Items in Dataset</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">♻️</div>
+                    <div class="stat-content">
+                        <h3 id="recyclableCount">-</h3>
+                        <p>Recyclable Items</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-content">
+                        <h3 id="avgScore">-</h3>
+                        <p>Avg Sustainability Score</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🔮</div>
+                    <div class="stat-content">
+                        <h3 id="predictionCount">-</h3>
+                        <p>Total Predictions Made</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <h3>Waste Category Distribution</h3>
+                    <canvas id="categoryChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3>Environmental Impact Distribution</h3>
+                    <canvas id="impactChart"></canvas>
+                </div>
+            </div>
+
+            <div class="history-section">
+                <div class="card">
+                    <div class="history-header">
+                        <h3>Recent Predictions</h3>
+                        <button id="clearHistoryBtn" class="btn btn-secondary">Clear History</button>
+                    </div>
+                    <div id="historyList" class="history-list">
+                        <p class="loading">Loading history...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AI Sustainability Assistant. Analytics Dashboard</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>
+

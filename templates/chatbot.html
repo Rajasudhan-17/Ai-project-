@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot - Sustainability Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chatbot.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">🌱</span>
+                <span class="brand-text">AI Sustainability Assistant</span>
+            </div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/chatbot" class="active">Chatbot</a>
+                <a href="/dashboard">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content chatbot-main">
+        <div class="container">
+            <div class="chatbot-container">
+                <div class="chatbot-header">
+                    <h2>💬 AI Sustainability Chatbot</h2>
+                    <p>Ask me anything about sustainability, waste disposal, recycling, or environmental impact</p>
+                </div>
+
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <div class="message-content">
+                            <p>Hello! I'm your AI Sustainability Assistant. I can help you with:</p>
+                            <ul>
+                                <li>Waste disposal recommendations</li>
+                                <li>Recycling guidelines</li>
+                                <li>Environmental impact information</li>
+                                <li>Sustainability best practices</li>
+                            </ul>
+                            <p>What would you like to know?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <form id="chatForm" class="chat-form">
+                        <input type="text" id="chatInput" placeholder="Type your question here..." 
+                               autocomplete="off" required>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+
+                <div class="suggested-questions">
+                    <p class="suggestions-label">Try asking:</p>
+                    <div class="suggestion-chips">
+                        <button class="chip" data-question="Where should I throw a used battery?">Where should I throw a used battery?</button>
+                        <button class="chip" data-question="How do I recycle plastic bottles?">How do I recycle plastic bottles?</button>
+                        <button class="chip" data-question="What is the environmental impact of food waste?">What is the environmental impact of food waste?</button>
+                        <button class="chip" data-question="How can I reduce my carbon footprint?">How can I reduce my carbon footprint?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AI Sustainability Assistant. Powered by RAG & ML.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html>
+
